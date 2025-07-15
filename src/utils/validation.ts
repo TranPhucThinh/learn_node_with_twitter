@@ -16,6 +16,7 @@ export const validate = (validation: RunnableValidationChains<ValidationChain>) 
     }
 
     const errorsObject = errors.mapped()
+    console.log(' return ~ errorsObject:', errorsObject)
     const entityError = new EntityError({ errors: {} })
 
     for (const key in errorsObject) {
