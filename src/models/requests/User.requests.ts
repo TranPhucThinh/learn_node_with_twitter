@@ -51,3 +51,7 @@ export interface ResetPasswordReqBody {
 export interface VerifyForgotPasswordReqBody {
   forgot_password_token: string
 }
+
+export interface GetProfileReqParams {
+  username: string
+}
