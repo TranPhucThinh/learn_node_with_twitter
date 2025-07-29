@@ -64,3 +64,9 @@ export interface VerifyForgotPasswordReqBody {
 export interface GetProfileReqParams extends ParamsDictionary {
   username: string
 }
+
+export interface ChangePasswordReqBody {
+  old_password: string
+  password: string
+  confirm_password: string
+}
